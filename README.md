@@ -7,7 +7,7 @@ after getting simple users information, it is ingested into MongoDB schema using
 as orchestrator. The whole data pipeline is implemented using Docker Compose.
 
 ## Requirements
-- Docker installation up to date required, [Docker](https://docs.do).
+- Docker installation up to date required, [Docker](https://docs.docker.com/get-docker/).
 - Docker Compose installation, [Docker Compose](https://docs.docker.com/compose/install/).
 
 ## Process to follow
@@ -31,7 +31,7 @@ You must see something like this:
 
 ![docker ps](./imgs/dockers_working_good.png)
 
-With your containers running good, go to ![localhost:8080](localhost:8080) to see Airflow login 
+With your containers running good, go to ![](localhost:8080) to see Airflow login 
 interface and use you user name as **airflow** and password **airflow** to login.
 
 ![airflow login](./imgs/login_airflow.png)
@@ -63,7 +63,7 @@ password:
 
 4. Trigger user_processing_mongo DAG from Airflow API.
 
-5. Go to ![localhost:8081](localhost:8081) in order to explore ingested data in dev-test schema.
+5. Go to ![](localhost:8081) in order to explore ingested data in dev-test schema.
 
 
 
