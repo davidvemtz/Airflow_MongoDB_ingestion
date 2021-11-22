@@ -14,7 +14,7 @@ as orchestrator. The whole data pipeline is implemented using Docker Compose.
 Once you have installed Docker and Docker Compose, you are ready to go. Download or clone this
 repo into your local machine:
 
-`git clone` 
+`git clone https://github.com/davidvemtz/Airflow_MongoDB_ingestion.git` 
 
 Start Docker Desktop application.
 
