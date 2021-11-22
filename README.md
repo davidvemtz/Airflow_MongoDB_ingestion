@@ -31,7 +31,7 @@ You must see something like this:
 
 ![docker ps](./imgs/dockers_working_good.png)
 
-With your containers running good, go to [localhost:8080](localhost:8080) to see Airflow login 
+With your containers running good, go to ![localhost:8080](localhost:8080) to see Airflow login 
 interface and use you user name as **airflow** and password **airflow** to login.
 
 ![airflow login](./imgs/login_airflow.png)
@@ -45,16 +45,16 @@ In order for the complete dag to run successfully execute next steps in order:
 2. Create New Connection in order to provide access to airflow to randomuser API. It's important
 for you to use the same name as the one shown in image, because it's already used in DAG's code.
 
-    1. Go to Connections from Admin tab in Airflow UI. 
+    I. Go to Connections from Admin tab in Airflow UI. 
 
 ![connections](./imgs/connections_menu.png)
 
-    2. After clicking in + button shown on the top of your connections list, fill needed fields,
+    II. After clicking in + button shown on the top of your connections list, fill needed fields,
     choosing HTTP connection type.
 
 ![user api conn](./imgs/randomuser_conn.png)
 
-    3. Click Save button after filling correctly every needed field.
+    III. Click Save button after filling correctly every needed field.
 
 3. Select *mongo_default* connection to edit its properties as follows, use **admin** as Login and
 password:
@@ -63,7 +63,7 @@ password:
 
 4. Trigger user_processing_mongo DAG from Airflow API.
 
-5. Go to [localhost:8081](localhost:8081) in order to explore ingested data in dev-test schema.
+5. Go to ![localhost:8081](localhost:8081) in order to explore ingested data in dev-test schema.
 
 
 
