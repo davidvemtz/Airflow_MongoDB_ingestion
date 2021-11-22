@@ -29,37 +29,37 @@ instances are running good, you can check using:
 
 You must see something like this:
 
-![./imgs/dockers_working_good.png]
+![docker ps](./imgs/dockers_working_good.png)
 
 With your containers running good, go to [localhost:8080](localhost:8080) to see Airflow login 
 interface and use you user name as **airflow** and password **airflow** to login.
 
-![./imgs/login_airflow.png]
+![airflow login](./imgs/login_airflow.png)
 
 In order for the complete dag to run successfully execute next steps in order:
 
 1. Unpause DAG in the toggle button beside DAG's name.
 
-![./imgs/toggle_button.png]
+![toggle](./imgs/toggle_button.png)
 
 2. Create New Connection in order to provide access to airflow to randomuser API. It's important
 for you to use the same name as the one shown in image, because it's already used in DAG's code.
 
     1. Go to Connections from Admin tab in Airflow UI. 
 
-![./imgs/connections_menu.png]
+![connections](./imgs/connections_menu.png)
 
     2. After clicking in + button shown on the top of your connections list, fill needed fields,
     choosing HTTP connection type.
 
-![./imgs/randomuser_conn.png]
+![user api conn](./imgs/randomuser_conn.png)
 
     3. Click Save button after filling correctly every needed field.
 
 3. Select *mongo_default* connection to edit its properties as follows, use **admin** as Login and
 password:
 
-![./imgs/mongo_connection.png]
+![mongo connection](./imgs/mongo_connection.png)
 
 4. Trigger user_processing_mongo DAG from Airflow API.
 
